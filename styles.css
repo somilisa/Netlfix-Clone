@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+header {
+  width: 100%;
+  padding: 25px 60px;
+}
+.logo {
+  width: 111px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content h2 {
+  font-size: 64px;
+  font-weight: 400;
+}
+.profile-cards {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 30px;
+  gap: 50px;
+}
+.profile-card img {
+  width: 200px;
+}
+button {
+  padding: 10px 30px;
+  background-color: transparent;
+  color: #808080;
+  border: 1px solid #808080;
+}
