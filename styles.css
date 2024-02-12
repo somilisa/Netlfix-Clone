@@ -7,6 +7,7 @@ body {
   width: 100%;
   min-height: 110vh;
   background: #141414;
+  font-family: sans-serif;
 }
 header {
   width: 100%;
@@ -26,30 +27,49 @@ main {
   align-items: center;
 }
 .content h2 {
-  font-size: 64px;
+  font-size: max(3.5vw, 30px);
   font-weight: 400;
+  color: #fff;
 }
 .profile-cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 30px;
-  gap: 50px;
+  gap: 2vw;
   margin-bottom: 30px;
 }
-.profile-card p {
+.profile-cards a {
+  text-decoration: none;
+}
+.profile-cards a:hover {
+  color: #fff;
+}
+.profile-icon p {
   margin-top: 20px;
   color: #6d6d6eb2;
   font-size: 26px;
   text-align: center;
 }
-.profile-card img {
-  width: 200px;
+.profile-icon img {
+  width: 10vw;
+  min-width: 84px;
+  max-width: 200px;
+  border-radius: 4px;
 }
-button {
+.profile-button {
+  text-decoration: none;
   padding: 10px 30px;
+  margin: 2em 0 1em;
   background-color: transparent;
   color: #808080;
-  font-size: 26px;
   border: 1px solid #808080;
+  cursor: pointer;
+  display: block;
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+}
+.profile-button:hover {
+  color: #fff;
+  border: 1px solid #fff;
 }
