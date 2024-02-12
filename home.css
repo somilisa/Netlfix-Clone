@@ -89,6 +89,7 @@ nav {
 button {
   padding: 15px 30px;
   border-radius: 4px;
+  border-color: transparent;
 }
 .play-btn {
   background: #fff;
@@ -154,7 +155,7 @@ h4 {
   color: #808080;
   font-size: 13px;
 }
-button {
+.service-info {
   width: 107px;
   padding: 10px 15px;
   background-color: transparent;
