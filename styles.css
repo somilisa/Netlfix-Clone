@@ -16,6 +16,7 @@ h2 {
   font-weight: 700;
   line-height: 55px;
   letter-spacing: -0.01em;
+  text-align: center;
 }
 header {
   width: 100%;
@@ -141,10 +142,69 @@ input[type="button"] {
   align-items: center;
 }
 .questions ul {
-  width: 40vw;
+  max-width: 815px;
+  width: 80%;
 }
 .questions li {
   background: #303030;
   padding: 21px 31px;
   margin-bottom: 9px;
+}
+.call p {
+  font-size: 16px;
+}
+.footer-content {
+  max-width: 883px;
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #808080;
+}
+.social img {
+  width: 24px;
+  margin-right: 20px;
+}
+.links ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.links li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.links a {
+  text-decoration: none;
+  color: #757575;
+  font-size: 13px;
+}
+footer select {
+  width: 132px;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: #999999;
+  font-size: 19px;
+  border: 1px solid #999999;
+}
+.copyright {
+  font-size: 13px;
+  text-align: left;
+  color: #757575;
+}
+@media screen and (max-width: 540px) {
+  .content,
+  .content:nth-child(even) {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .links ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  input[type="email"] {
+    width: unset;
+  }
 }
